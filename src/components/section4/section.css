@@ -1,0 +1,7 @@
+.three_Card-main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 75px;
+    padding-inline: 25px;
+}
