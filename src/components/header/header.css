@@ -1,0 +1,81 @@
+header{
+    width: 100%;
+    height: 65px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 90px;
+}
+.logoName{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+.logoName img{
+    width: 50px;
+    height: 50px;
+}
+.logoName h2{
+    font-weight: 500;
+}
+.Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Navbar ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 50px;
+}
+.Navbar ul li{
+   margin-right: 25px;
+}
+.Navbar i{
+    position: relative;
+    right: 40px;
+    color: #49494b;
+}
+.Navbar button{
+    width: 143px;
+    height: 42px;
+    border-radius: 5px;
+    color: white;
+    background-color: #7C4EE4;
+    border: none;
+    margin-right: 20px;
+}
+
+/* bars css */
+#bar_icon{
+    display: none;
+    font-size: 25px;
+}
+
+
+/*  Media Query For All Devices Start Here */
+
+@media(max-width:950px){
+    header{
+        padding-inline: 20px;
+    }
+}
+@media (max-width:700px){
+    header{
+        padding-inline: 30px;
+    }
+    .Navbar{
+        display: none;
+    }
+    #bar_icon{
+        display: block;
+    }
+}
+
+@media(max-width:400px){
+    header{
+        padding-inline: 10px;
+    }
+}
