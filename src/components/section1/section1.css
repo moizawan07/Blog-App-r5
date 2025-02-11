@@ -1,0 +1,119 @@
+.section2-container{
+    width: 100%;
+    padding-block: 33px;
+    padding-inline: 25px;
+    position: relative;
+}
+.s2left-con{
+    width: 100%;
+    height: 550px;
+}
+.s2left-con img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.s2right-con{
+    width: 900px;
+    padding-inline: 25px;
+    padding-block: 20px;
+    position: absolute;
+    bottom: -10px;
+    right: 25px;
+    background-color: white;
+    border-radius: 7px;
+}
+.s2right-con p .span1{
+    font-weight: 600;
+    margin-right: 9px;
+}
+.s2right-con p .span2{
+    font-weight: 250;
+}
+.s2right-con h1{
+    margin-block: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.s2right-con button{
+    margin-top: 25px;
+    width: 130px;
+    height: 39px;
+    border: 1px solid var(--purple);
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+
+/* Media Query Start For All the Devices */
+
+@media(max-width:1050px){
+    .s2right-con{
+        width: 620px;
+        padding-block: 10px;
+    }
+    .s2right-con h1{
+        margin-block: 15px;
+        font-size: 30px;
+    }
+    .s2right-con p{
+        font-size: 15px;
+    }
+}
+
+@media(max-width:900px){
+    .s2right-con{
+        width: 540px;
+        padding-block: 10px;
+    }
+    .s2right-con h1{
+        margin-block: 10px;
+        font-size: 25px;
+    }
+    .s2right-con p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:750px){
+    .s2left-con{
+        height: 400px;
+    }
+    .s2right-con{
+        width: 500px;
+    }
+
+    .s2right-con h1{
+        font-size: 20px;
+    }
+    .s2right-con p{
+        font-size: 12px;
+    }
+    .s2right-con button{
+        width: 110px;
+        height: 30px;
+        font-variant: small-caps;
+    }
+}
+
+@media(max-width:550px){
+    .s2left-con{
+        height: 250px;
+    }
+    .s2right-con{
+        position: static;
+        margin-top: 30px;
+        width: 100%;
+    }
+    .s2right-con h1{
+        font-size: 17px;
+    }
+    .s2right-con p{
+        font-size: 11px;
+    }
+    .s2right-con button{
+        width: 100px;
+        height: 28px;
+    }
+}

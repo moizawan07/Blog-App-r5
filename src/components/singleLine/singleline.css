@@ -20,3 +20,31 @@
     font-weight: bolder;
     letter-spacing: 1px;
 }
+
+@media (max-width:600px){
+    .singleline-main h1{
+        font-size: 35px;
+    }
+    .singleline-main button{
+        width: 115px;
+        height: 40px;
+    }
+}
+@media (max-width:500px){
+    .singleline-main h1{
+        font-size: 30px;
+    }
+    .singleline-main button{
+        width: 105px;
+        height: 37px;
+    }
+}
+@media (max-width:400px){
+    .singleline-main h1{
+        font-size: 22px;
+    }
+    .singleline-main button{
+        width: 95px;
+        height: 30px;
+    }
+}

@@ -1,27 +1,16 @@
 import './section2.css'
-import Bimg from '../../assets/section2Bigimg.png'
-import Button from '../button/Button'
+import Section1 from "../section1/Section1";
 
-function Section2({mainClass,leftClass,rightClass}){
-  return(
-    <>
-       <div className={mainClass}>
-          <div className={leftClass}>
-             <img src={Bimg} alt="bigImage"/>
-          </div>
-          <div className={rightClass}>
-            <p>
-                <span className='span1'>Development</span>
-                <span  className='span2'>10 feb 2025</span>
-            </p>
-            <h1>How to make a Game Look More Attractive with New Vr & Al Technology</h1>
-            <p className='para'>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore obcaecati molestiae nesciunt! Eaque sed architecto vero iure at quia voluptatem aliquam! At optio facere deserunt.
-            </p>
-            <Button btnName='Read More'/>
-          </div>
-        </div> 
-    </>
-  )
+
+function Section2(){
+    return(
+        <>
+          <Section1 
+             mainClass='section3-container'
+             leftClass='s3left-con'
+             rightClass='s3right-con'
+          />
+        </>
+    )
 }
 export default Section2;
