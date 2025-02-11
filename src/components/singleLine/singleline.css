@@ -1,0 +1,22 @@
+.singleline-main{
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 27px;
+    padding-block: 60px;
+}
+.singleline-main h1{
+    font-weight: 550;
+    font-size: 43px;
+    font-family: "Inter", sans-serif;
+}
+.singleline-main button{
+    width: 125px;
+    height: 45px;
+    color: white;
+    font-variant: small-caps;
+    background-color: var(--purple);
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}

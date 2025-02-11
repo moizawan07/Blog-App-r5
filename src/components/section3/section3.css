@@ -1,0 +1,50 @@
+.section3-container{
+    width: 100%;
+    padding-inline: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.s3left-con{
+    width: 780px;
+    height: 450px;
+}
+.s3left-con img{
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+.s3right-con{
+    width: 550px;
+    /* background-color: white; */
+    padding-block: 20px;
+    padding-inline: 20px;
+    border-radius: 10px;
+}
+
+.s3right-con p .span1{
+    font-weight: 600;
+    margin-right: 9px;
+}
+.s3right-con p .span2{
+    font-weight: 250;
+}
+.s3right-con h1{
+    margin-block: 20px;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+}
+.s3right-con button{
+    margin-top: 25px;
+    width: 130px;
+    height: 39px;
+    border: 1px solid var(--purple);
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+
+/* Media Query Start For All the Devices */
+
+

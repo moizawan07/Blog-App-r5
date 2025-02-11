@@ -4,6 +4,11 @@
 :root{
   --purple: #7C4EE4
 }
+
+body{
+  background-color: whitesmoke;
+}
+
 *{
   margin: 0;
   padding: 0;

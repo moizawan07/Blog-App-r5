@@ -2,14 +2,14 @@ import './section2.css'
 import Bimg from '../../assets/section2Bigimg.png'
 import Button from '../button/Button'
 
-function Section2(){
+function Section2({mainClass,leftClass,rightClass}){
   return(
     <>
-       <div className="section2-container">
-          <div className="s2left-con">
+       <div className={mainClass}>
+          <div className={leftClass}>
              <img src={Bimg} alt="bigImage"/>
           </div>
-          <div className="s2right-con">
+          <div className={rightClass}>
             <p>
                 <span className='span1'>Development</span>
                 <span  className='span2'>10 feb 2025</span>
