@@ -1,0 +1,54 @@
+.Contact-main{
+    width: 100%;
+    padding-block: 25px;
+}
+.CA-section1{
+    margin-top: 35px;
+    text-align: center;
+}
+.CA-section1 h1{
+    font-weight: 600;
+    font-size: 45px;
+    font-family: "Raleway";
+    margin-bottom: 25px;
+}
+.CA-section1 p{
+    color: rgb(56, 56, 56);
+    line-height: 23px;
+}
+.CA-section2{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.contactus-card{
+    width: 330px;
+    text-align: center;
+    padding-block: 10px;
+    background-color: white;
+    border-radius: 7px;
+}
+.contactus-card .contact-us-card-icon{
+    background-color: var(--purple);
+    border-radius: 50%;
+    width: 75px;
+    height: 75px;
+    text-align: center;
+    align-self: center;
+    color: white;
+    font-size: 30px;
+    margin: 20px auto;
+    align-content: center;
+}
+.contactus-card h3{
+    color:var(--purple);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.contactus-card p{
+    color: rgb(64, 63, 63);
+    margin-bottom: 35px;
+}

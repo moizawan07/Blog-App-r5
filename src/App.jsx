@@ -1,43 +1,23 @@
-import './App.css'
-import Header from './components/header/Header';
-import HeroSection from './components/heroSection/HeroSection';
-import Section1 from './components/section1/Section1';
-import Section2 from './components/section2/Section2';
-import Section3 from './components/section3/Section3';
-import Section4 from './components/section4/Section4';
-import SingleLine from './components/singleLine/SigleLine';
-import Footer from './components/footer/Footer';
-
+import "./App.css";
+import Header from "./components/header/Header";
+import Section4 from "./components/section4/Section4";
+import Footer from "./components/footer/Footer";
+//   <-----  ALL FILES COMPONET HERE ------>
+// import Home from "./pages//home/Home";
+// import AboutUs from "./pages/aboutus/AboutUs";
+import ContactUs from "./pages/contactus/ContactUs";
 
 function App() {
-
   return (
     <>
-        
-      <Header />        {/* Header Component */}
-      
-      <HeroSection />   {/* HeroSection Component */}
-
-      <Section1        
-         mainClass='section2-container'
-         leftClass='s2left-con'
-         rightClass='s2right-con'
-      />      {/* Section1 Component */}
-
-      <SingleLine
-       heading='Our Reacent Post'
-       />    {/* SingleLine Component */}
-
-      <Section2 />      {/* Section2 Component */}
-
-      <Section3 />      {/* Section3 Component */}
-
-      <Section4 />      {/* Section4 Component */}
-
-      <Footer />
-      
+      <Header />                          {/* HEADER Component */}                    
+      {/* <Home />*/}                     {/* HOME page */}
+      {/* <AboutUs /> */}                 {/* ABOUT US page */}
+      <ContactUs />                       {/* CONTACT US  page */}
+      <Section4 />                        {/* SECTION 4 Component */}        
+      <Footer />                          {/* FOOTER Component */}
     </>
-  )
+  );
 }
 
 export default App;
