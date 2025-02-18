@@ -17,7 +17,7 @@ function HeroSection(){
             <Button btnName='Read more'/>
          </div>
          <div className="heroRight-con">
-           <img src={HeroImg} alt="Big image" />
+           <img src={HeroImg}  alt="Big image" />
          </div>
       </div>
       <img className='mask-img' src={MaskGroup} alt="MaskgroupImg" />

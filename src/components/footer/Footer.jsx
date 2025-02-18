@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './footer.css'
 import NavLogo from '../../assets/Navbar_logo.png'
 
@@ -12,10 +13,10 @@ function Footer(){
           </div>
           <div className="second-footer-line">
             <ul>
-                <li>Home</li>
-                <li>Blog</li>
-                <li>About</li>
-                <li>Contact Us</li>
+            <Link to='/'><li>Home</li> </Link>
+            <Link to='blog'><li>Blog</li> </Link>
+            <Link to='about'><li>About</li> </Link>
+            <Link to='contact'><li>Contact Us</li> </Link>
             </ul>
           </div>
           <div className="Third-footer-line">
