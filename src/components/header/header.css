@@ -6,6 +6,8 @@ header{
     justify-content: space-between;
     align-items: center;
     padding-inline: 90px;
+    position: relative;
+    z-index: 9999;
 }
 .logoName{
     display: flex;
@@ -67,9 +69,10 @@ header{
         padding-inline: 20px;
     }
 }
-@media (max-width:700px){
+/* @media (max-width:700px){
     header{
         padding-inline: 30px;
+        height: auto;
     }
     .Navbar{
         display: none;
@@ -82,5 +85,55 @@ header{
 @media(max-width:400px){
     header{
         padding-inline: 10px;
+    }
+} */
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding-inline: 30px;
+        height: 60px; /* Navbar ka height thoda kam kiya */
+    }
+
+    .Navbar {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: white;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px 50px;
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        display: none;  /*  Phle Hidden hoga */
+        z-index: 9999;
+        transition: 2s ease-in;
+    }
+
+    .Navbar ul {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        margin-right: 0;
+        text-align: left !important;
+    }
+
+    .Navbar button {
+        margin-top: 10px;
+       
+    }
+    .Navbar i{
+      display: none;
+    }
+
+    #bar_icon {
+        display: block; /* Mobile par show hoga */
+        cursor: pointer;
+    }
+
+
+    /* ✅ Navbar toggle ke liye */
+    .Navbar.active {
+        display: flex;
     }
 }

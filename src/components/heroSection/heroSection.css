@@ -32,6 +32,8 @@
     color: white;
     flex-wrap: wrap;
     row-gap: 55px;
+    position: relative;
+    z-index: -9999;
 }
 
 .heroLeft-con{
@@ -119,12 +121,17 @@
     
 }
 
+
+
 @media(max-width:620px){
     .Vector_img {
         width: 100%;
         left: 0px;
+        /* top: 31%; */
+        /* height: 60px; */
         transform: scaleY(2.2);
     }
+
 
 }
 

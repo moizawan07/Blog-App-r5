@@ -2,8 +2,17 @@ import { Link } from 'react-router-dom'
 import './header.css'
 import NavLogo from '../../assets/Navbar_logo.png'
 import Button from '../button/Button'
+import { useRef } from 'react'
 
 function Header(){
+
+//    Responsive navbar Code
+    let navMain = useRef(null)
+    function navbarToggle(){
+      console.log(  navMain.current.classList.toggle("active"))   
+    }
+    
+
     return(
         <>
            <header>
@@ -11,7 +20,7 @@ function Header(){
                    <img src={NavLogo} alt="Navbarlogo" />
                    <h1>Zarrin</h1>
                </div>
-               <div className="Navbar">
+               <div className="Navbar" ref={navMain}>
                   <ul>
                    <Link to='blog'> <li>Blog</li> </Link>
                    <Link to='about'> <li>about Us</li> </Link>
@@ -19,7 +28,7 @@ function Header(){
                   <i className="fa-solid fa-magnifying-glass"></i>       {/*Icon */}
               <Link to='contact'> <Button btnName='Contact Us'/> </Link>                       {/* Button  ComPonent call */}
                </div>
-                  <i id='bar_icon' className="fa fa-list" aria-hidden="true"></i>
+                  <i id='bar_icon' className="fa fa-list"  onClick={navbarToggle}></i>
            </header>
         </>
     )
