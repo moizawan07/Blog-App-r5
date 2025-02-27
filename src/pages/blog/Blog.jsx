@@ -6,6 +6,8 @@ import Card from '../../components/card/Card'
 import Card7 from '../../assets/card7.png'
 import Card8 from '../../assets/card8.png'
 import Card9 from '../../assets/card9.png'
+import NewBlog from '../../components/NewBlog/NewBlog'
+
 
 function Blog(){
 
@@ -33,6 +35,8 @@ function Blog(){
         },
       ]
 
+     
+      
 
     return(
         <>
@@ -79,7 +83,14 @@ function Blog(){
                    )
                 })
             }
+
+            {/* New Blog Jsx */}
+           <NewBlog />  
            </div>
+
+           {/* Modaal Jsx */}
+          
+           
         </>
     )
 }

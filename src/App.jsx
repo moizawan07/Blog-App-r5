@@ -1,5 +1,7 @@
 import "./App.css";
-import { BrowserRouter,Routes,Route } from "react-router-dom";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import { BrowserRouter,Routes,Route, useLocation } from "react-router-dom";
 
 //   <-----   COMPONET JO HAR PAGE PR USE HO RHE HERE ------>
 
@@ -13,11 +15,16 @@ import Home from "./pages//home/Home";
 import AboutUs from "./pages/aboutus/AboutUs";
 import ContactUs from "./pages/contactus/ContactUs";
 import Blog from "./pages/blog/Blog";
+import SignUp from "./components/signUp/SignUp";
+import Login from './components/login/Login'
 
 
 function App() {
+
   return (
     <>
+    
+    <ToastContainer  style={{ zIndex: 9999999 }} /> 
     <BrowserRouter >
             <Header />   
 
@@ -26,6 +33,8 @@ function App() {
             <Route  path="about"     element={<AboutUs />}/>               
             <Route  path="contact"   element={<ContactUs />}/>                    
             <Route  path="blog"      element={<Blog />}/>                    
+            <Route  path="signUp"    element={<SignUp />}/>                    
+            <Route  path="login"     element={<Login />}/>                    
         </Routes>  
 
             <Section4 />                                 

@@ -5,7 +5,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 90px;
+    padding-inline: 20px;
     position: relative;
     z-index: 9999;
 }
@@ -45,14 +45,16 @@ header{
     color: #49494b;
 }
 .Navbar button{
-    width: 143px;
-    height: 42px;
+    /* width: 143px; */
+    /* height: 42px; */
     border-radius: 5px;
     color: white;
     background-color: #7C4EE4;
     border: none;
     margin-right: 20px;
     cursor: pointer;
+    padding-inline: 14px;
+    padding-block: 9px;
 }
 
 /* bars css */

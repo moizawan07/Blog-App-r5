@@ -1,0 +1,150 @@
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 999999;
+  }
+  
+  /* Modal Box */
+  .modal {
+    background: white;
+    padding: 20px;
+    width: 490px;
+    min-height: 80vh;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  /* Open Button */
+  .ModalOnButton{
+    margin-block: 25px;
+    cursor: pointer;
+    margin-left: 95px;
+    width: 120px;
+    height: 35px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  /* Close Button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 18px;
+    cursor: pointer;
+    color: #555;
+  }
+
+  
+  .close-btn:hover {
+    color: black;
+  }
+  
+  /* Modal Title */
+  .modal-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    font-family: 'Raleway';
+    color: var(--purple);
+  }
+  
+  /* Form Styling */
+  .modal-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  /* Input Fields */
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    line-height: 30px;
+    outline: none;
+    margin-top: 5px;
+  }
+  
+  .textarea {
+    height: 80px;
+    resize: none;
+    outline: none;
+  }
+
+  .input-field:focus,.textarea:focus{
+    border: 1px solid var(--purple);
+  }
+  
+  /* Image Upload */
+  .image-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-preview {
+    width: 100px;
+    height: 100px;
+    background: #f3f3f3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  .file-input {
+    margin-block: 8px;
+    font-size: 12px;
+    margin-left: 26.5%;
+    color: var(--purple);
+    font-weight: bold;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    color: white;
+    padding: 17px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: var(--purple);
+  }
+  
+  .submit-btn:hover {
+    background-color: transparent;
+    border: 1.4px solid var(--purple);
+    color: var(--purple);
+    font-weight: 500;
+  }
+  
+  /* Modal Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-80px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
