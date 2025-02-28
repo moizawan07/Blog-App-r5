@@ -1,5 +1,4 @@
 import './section1.css'
-import Bimg from '../../assets/section2Bigimg.png'
 import Button from '../button/Button'
 
 function Section1({mainClass,leftClass,rightClass}){
@@ -7,7 +6,7 @@ function Section1({mainClass,leftClass,rightClass}){
     <>
        <div className={mainClass}>
           <div className={leftClass}>
-             <img src={Bimg} alt="bigImage"/>
+             <img src='/assets/section2Bigimg.png' alt="bigImage"/>
           </div>
           <div className={rightClass}>
             <p>

@@ -1,6 +1,6 @@
 import './contactus.css'
 import ContactUsCard from '../../components/contact_us-card/ContactUs-card';
-import Mapimg from '../../assets/map.png'
+
 
 
 function ContactUs(){
@@ -32,7 +32,7 @@ function ContactUs(){
             </div>
             {/* Section 3 */}
             <div className="CA-section3">
-                <img src={Mapimg} alt="" />
+                <img src='/assets/map.png' alt="" />
             </div>
             <div className="CA-section4">
                 <div className="firstline">

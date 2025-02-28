@@ -1,14 +1,12 @@
 import './heroSection.css'
 import Button from '../button/Button';
-import HeroImg  from "../../assets/HeroSection.png"
-import Vector  from "../../assets/Vector.png"
-import MaskGroup  from "../../assets/Mask group.png"
+
 
 
 function HeroSection(){
     return(
       <>
-        <img className='Vector_img' src={Vector} alt="Vector-img" />
+        <img className='Vector_img' src='/assets/Vector.png' alt="Vector-img" />
       <div className="HeroSectionContainer">
          <div className="heroLeft-con">
             <h4>Featured Post</h4>
@@ -17,10 +15,10 @@ function HeroSection(){
             <Button btnName='Read more'/>
          </div>
          <div className="heroRight-con">
-           <img src={HeroImg}  alt="Big image" />
+           <img src='/assets/HeroSection.png'  alt="Big image" />
          </div>
       </div>
-      <img className='mask-img' src={MaskGroup} alt="MaskgroupImg" />
+      <img className='mask-img' src='/assets/Mask group.png' alt="MaskgroupImg" />
       </>
     )
 }

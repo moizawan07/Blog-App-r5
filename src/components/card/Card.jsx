@@ -1,9 +1,9 @@
 import "./card.css"
-import DefaultCardImg from '../../assets/card2.png'
+
 function Card({imgSrc,role,date,title,desc}){
   return(
     <div className="Card-main">
-       <img src={imgSrc ? imgSrc : DefaultCardImg} alt="Card image"/>
+       <img src={imgSrc ? imgSrc : '/assets/card2.png'} alt="Card image"/>
 
        <p className="firstP">
         <span className="Leftt">{role}</span>

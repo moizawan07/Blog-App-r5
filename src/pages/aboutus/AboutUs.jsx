@@ -1,5 +1,4 @@
 import './about.css'
-import About1pic from '../../assets/Aboutus herosectionimg.png'
 import AboutCard from '../../components/Aboutus_card/Aboutus-card'
 
 
@@ -16,7 +15,7 @@ function AboutUs (){
          </div>
          {/* Section 2 */}
          <div className="AU-section2">
-           <img src={About1pic} alt="AboutMianPic" />
+           <img src='/assets/Aboutus herosectionimg.png' alt="AboutMianPic" />
          </div>
          {/* Section 3 */}
          <div className="AU-section3">

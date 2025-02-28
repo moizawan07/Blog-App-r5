@@ -15,8 +15,9 @@ import Home from "./pages//home/Home";
 import AboutUs from "./pages/aboutus/AboutUs";
 import ContactUs from "./pages/contactus/ContactUs";
 import Blog from "./pages/blog/Blog";
-import SignUp from "./components/signUp/SignUp";
-import Login from './components/login/Login'
+import SignUp from "./pages/signUp/SignUp";
+import Login from './pages/login/Login'
+import Profile from "./pages/profile/Profile";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
             <Route  path="about"     element={<AboutUs />}/>               
             <Route  path="contact"   element={<ContactUs />}/>                    
             <Route  path="blog"      element={<Blog />}/>                    
+            <Route  path="profile"      element={<Profile />}/>                    
             <Route  path="signUp"    element={<SignUp />}/>                    
             <Route  path="login"     element={<Login />}/>                    
         </Routes>  

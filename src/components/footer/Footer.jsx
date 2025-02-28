@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import './footer.css'
-import NavLogo from '../../assets/Navbar_logo.png'
+
 
 
 
@@ -8,7 +8,7 @@ function Footer(){
     return (
         <div className='main-footer'>
           <div className="first-footer-line">
-             <img src={NavLogo} alt="Footer-icon" />
+             <img src='/assets/Navbar_logo.png' alt="Footer-icon" />
              <h1>Zarrin</h1>
           </div>
           <div className="second-footer-line">

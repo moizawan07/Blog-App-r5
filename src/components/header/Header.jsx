@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import './header.css'
-import NavLogo from '../../assets/Navbar_logo.png'
 import Button from '../button/Button'
 import { useRef } from 'react'
 
@@ -17,7 +16,7 @@ let navMain = useRef(null)
         <>
            <header>
                <div className="logoName">
-                   <img src={NavLogo} alt="Navbarlogo" />
+                   <img src='/assets/Navbar_logo.png' alt="Navbarlogo" />
                    <h1>Zarrin</h1>
                </div>
                <div className="Navbar" ref={navMain}>
@@ -26,7 +25,7 @@ let navMain = useRef(null)
                    <Link to='/'> <li>Home</li> </Link>
                    <Link to='blog'> <li>Blog</li> </Link>
                    <Link to='about'> <li>about Us</li> </Link>
-                   <Link to='about'> <li>Create a blog</li> </Link>
+                   <Link to='profile'> <li>Profile</li> </Link>
                   </ul>
 
               <i className="fa-solid fa-magnifying-glass"></i>       {/*Icon */}

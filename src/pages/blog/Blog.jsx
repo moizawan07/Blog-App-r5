@@ -1,12 +1,8 @@
 import './blog.css'
 import Section1 from '../../components/section1/Section1'
-import Blogimg1 from '../../assets/blogimg1.png'
 import SingleLine from '../../components/singleLine/SigleLine'
 import Card from '../../components/card/Card'
-import Card7 from '../../assets/card7.png'
-import Card8 from '../../assets/card8.png'
-import Card9 from '../../assets/card9.png'
-import NewBlog from '../../components/NewBlog/NewBlog'
+// import NewBlog from '../../components/NewBlog/NewBlog'
 
 
 function Blog(){
@@ -14,21 +10,21 @@ function Blog(){
     const carddatablog = [
        {
           id : 7,
-          imgSrc : Card7,
+          imgSrc : '/assets/card7.png',
           role : 'Travel',
           date : '16 jan 2025',
           title : 'Who is the Best Singer on Char? KNow him?'
         },
         {
           id : 8,
-          imgSrc : Card8,
+          imgSrc : '/assets/card8.png',
           role : 'Development',
           date : '17 jan 2025',
           title : 'How to Start Import Buniess from Home'
         },
         {
           id : 9,
-          imgSrc : Card9,
+          imgSrc : '/assets/card9.png',
           role : 'Sports',
           date : '18 jan 2025',
           title : 'Make Some Drink With Chocaltes Chocaltes with Milk'
@@ -62,7 +58,7 @@ function Blog(){
             <p>More than 3 billion people already benefit from AI-powered features in Google Workspace, whether it’s using Smart Compose in Gmail or auto-generated summaries in Google Docs. Now, we’re excited to take the next step and bring a limited set of trusted testers a new set of features that makes the process of writing even easier. In Gmail and Google Docs, you can simply type in a topic you’d like to write about, and a draft will be instantly generated for you. So if you’re a manager onboarding a new employee, Workspace saves you the time and effort involved in writing that first welcome email. From there, you can elaborate upon or abbreviate the message or adjust the tone to be more playful or professional — all in just a few clicks. We’ll be rolling out these new experiences to testers in the coming weeks.</p>
            </div>
            <div className='blog-section-5'>
-            <img src={Blogimg1} alt="" />
+            <img src='/assets/blogimg1.png' alt="" />
            </div>
            <div className='blog-section-6'>
             <p>We’re so excited by the potential of generative AI, and the opportunities it will unlock — from helping people express themselves creatively, to helping developers build brand new types of applications, to transforming how businesses and governments engage their customers and constituents. Stay tuned for more to come in the weeks and months ahea</p>
@@ -85,12 +81,8 @@ function Blog(){
             }
 
             {/* New Blog Jsx */}
-           <NewBlog />  
-           </div>
-
-           {/* Modaal Jsx */}
-          
-           
+           {/* <NewBlog />   */}
+           </div>           
         </>
     )
 }
