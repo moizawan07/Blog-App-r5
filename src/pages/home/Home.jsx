@@ -28,6 +28,8 @@ function Home() {
                         
             <Section3 />                                {/* Section3 Component */}
 
+            <Section4 />                                {/* Section4 Component */}
+
         </>
     )
 }

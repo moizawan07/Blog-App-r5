@@ -13,7 +13,6 @@ import { doc , getDoc } from "firebase/firestore";
 
 //   <-----   COMPONET JO HAR PAGE PR USE HO RHE HERE ------>
 import Header from "./components/header/Header";
-import Section4 from "./components/section4/Section4";
 import Footer from "./components/footer/Footer";
 
 //   <-----  ALL FILES COMPONET HERE ------>
@@ -42,7 +41,7 @@ function App() {
 
    // <--------- CHECH USER LOGIN OR NOT HERE ------->
   useEffect(() => {
-    // console.log('useEffect Run');
+    console.log('useEffect Run');
     const unsubscribe = onAuthStateChanged(auth, (user) => {
 
       if (user) {
@@ -74,7 +73,6 @@ function App() {
             <Route  path="login"     element={<Login />}/>                    
         </Routes>  
 
-            <Section4 />                                 
             <Footer />   
     </BrowserRouter>
     </>

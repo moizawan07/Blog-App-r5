@@ -2,6 +2,7 @@ import './blog.css'
 import Section1 from '../../components/section1/Section1'
 import SingleLine from '../../components/singleLine/SigleLine'
 import Card from '../../components/card/Card'
+import Section4 from '../../components/section4/Section4'
 // import NewBlog from '../../components/NewBlog/NewBlog'
 
 
@@ -82,7 +83,9 @@ function Blog(){
 
             {/* New Blog Jsx */}
            {/* <NewBlog />   */}
-           </div>           
+           </div>
+
+           <Section4 />           
         </>
     )
 }

@@ -1,5 +1,6 @@
 import './contactus.css'
 import ContactUsCard from '../../components/contact_us-card/ContactUs-card';
+import Section4 from '../../components/section4/Section4';
 
 
 
@@ -65,6 +66,7 @@ function ContactUs(){
                     <button>Send Message</button>
                 </div>
             </div>
+            <Section4 />
         </div>
     )
 }

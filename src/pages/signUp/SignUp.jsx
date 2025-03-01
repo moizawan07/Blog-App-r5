@@ -7,7 +7,7 @@ import {auth,db} from '../../services/firebase'
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import { setDoc,doc } from "firebase/firestore";
 
-console.log(auth);
+// console.log(auth);
 
 
 const SignUp = () => {

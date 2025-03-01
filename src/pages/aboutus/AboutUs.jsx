@@ -1,10 +1,13 @@
 import './about.css'
 import AboutCard from '../../components/Aboutus_card/Aboutus-card'
+import Section4 from '../../components/section4/Section4';
 
 
 
 function AboutUs (){
     return(
+      <>
+     
         <div className='About-us-Main'>
 
           {/* Section 1  */}
@@ -34,6 +37,8 @@ function AboutUs (){
            <AboutCard />
          </div>
         </div>
+         <Section4 />
+      </>
     )
 }
 export default AboutUs;
