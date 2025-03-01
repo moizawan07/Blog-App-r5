@@ -31,6 +31,11 @@
     padding-block: 14px;
     background-color: white;
     border-radius: 4px;
+    transition: all 0.3s ease;
+    &:hover{
+        border: 1px solid var(--purple);
+      transform: translateX(-25px);
+    }
 }
 .contactus-card .contact-us-card-icon{
     background-color: var(--purple);

@@ -15,11 +15,11 @@ const Login = () => {
  
   try {
     let loginUserInfo = await signInWithEmailAndPassword(auth, email, password)
-    console.log(loginUserInfo);
+    // console.log(loginUserInfo);
     navigate('/')
   } 
   catch (error) {
-    console.log('Error', error);
+    // console.log('Error', error);
     alert(error)
     
   }

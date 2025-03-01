@@ -3,7 +3,8 @@ import './header.css'
 import Button from '../button/Button'
 import { useRef } from 'react'
 
-function Header(){
+function Header({userlogin}){
+    // console.log(userlogin);
 
 //    Responsive navbar Code
 let navMain = useRef(null)
@@ -11,7 +12,6 @@ let navMain = useRef(null)
       console.log( navMain.current.classList.toggle("active"))   
     }
     
-
     return(
         <>
            <header>
@@ -25,12 +25,12 @@ let navMain = useRef(null)
                    <Link to='/'> <li>Home</li> </Link>
                    <Link to='blog'> <li>Blog</li> </Link>
                    <Link to='about'> <li>about Us</li> </Link>
-                   <Link to='profile'> <li>Profile</li> </Link>
+               {userlogin && <Link to='profile'> <li>Profile</li> </Link>}    {/* Agr user mil Rha Props ma to tbhi Show hogii */}
                   </ul>
 
               <i className="fa-solid fa-magnifying-glass"></i>       {/*Icon */}
               <Link to='contact'><Button btnName='Contact Us'/> </Link>                       {/* Button  ComPonent call */}
-              <Link to='signUp'><Button btnName='SignUp/Login'/> </Link>                       {/* Button  ComPonent call */}
+           {!userlogin && <Link to='signUp'><Button btnName='SignUp/Login'/> </Link>}         {/* Button  ComPonent call */}
                </div>
                   <i id='bar_icon' className="fa fa-list"  onClick={navbarToggle}></i>
            </header>
