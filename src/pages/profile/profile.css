@@ -293,6 +293,10 @@
     font-weight: 500;
   }
   
+  .nav{
+    display: none;
+  }
+
   /* Modal Animation */
   @keyframes fadeIn {
     from {
@@ -305,3 +309,47 @@
     }
   }
   
+
+
+  /*  Media Query Start here */
+
+@media(max-width:980px){
+  .PL_First_box h1{
+    font-size: 22px;
+  }
+  .PL_First_box p{
+    font-size: 15px;
+  }
+
+  .PL_Second_Box{
+    padding-inline: 2px;
+    margin-top: 70px;
+    line-height: 22px;
+  }
+
+  .PL_Second_Box p .pl_icon{
+    font-size: 15px;
+  }
+  .PL_Second_Box p .pl_text{
+    font-size: 15px;
+  }
+}
+
+@media(max-width:800px){
+  .nav{
+    display: block;
+   font-size: 25px;
+   position: absolute;
+   left: 5px;
+  }
+  .P-Left_main {
+    position: absolute;
+    top: 70px;
+    z-index: 9999;
+    width: 300px;
+    display: none;
+  }
+  .P-Right_main{
+    width: 100%;
+  }
+}

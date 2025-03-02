@@ -3,11 +3,14 @@ import Section1 from '../../components/section1/Section1'
 import SingleLine from '../../components/singleLine/SigleLine'
 import Card from '../../components/card/Card'
 import Section4 from '../../components/section4/Section4'
-// import NewBlog from '../../components/NewBlog/NewBlog'
+import { useEffect , useState } from 'react'
+import {db} from '../../services/firebase'
+import { getDocs ,collection } from 'firebase/firestore'
+
 
 
 function Blog(){
-
+    const [oldPostFb, setOldPostFb] = useState(null)
     const carddatablog = [
        {
           id : 7,
@@ -31,6 +34,22 @@ function Blog(){
           title : 'Make Some Drink With Chocaltes Chocaltes with Milk'
         },
       ]
+
+      
+    //   IN THIS USE EFFECT I GET USER OLD POST AND CHANGED THE STATE AND PRINT THAT
+  useEffect(() => {
+    let getitems = getDocs(collection(db,'UsersPost'))
+    .then((d) => {
+      let data = d.docs;
+      const fullPostPrevous = data.map(item => item.data());    // Here stored all Post object in this
+      // console.log('Full ata arr', fullPostPrevous);
+      
+      // Here Update the State in this Array old Post get by FB
+      setOldPostFb(fullPostPrevous)
+      
+    })
+    .catch((error) => console.error(error) )
+  },[])  
 
      
       
@@ -82,7 +101,20 @@ function Blog(){
             }
 
             {/* New Blog Jsx */}
-           {/* <NewBlog />   */}
+            {oldPostFb && (  
+                oldPostFb.map((eachItem) => {
+                  return (
+                    <Card 
+                    imgSrc = {eachItem.imageSrc}
+                    role=    {eachItem.role}
+                    desc=    {eachItem.description} 
+                    title=   {eachItem.title}
+                    />
+                   )
+                }) 
+            )}
+
+          
            </div>
 
            <Section4 />           

@@ -254,6 +254,9 @@ const storedAndgetPostInFB =  async () => {
 
         {/* Here UI OF PROFILE  Jsx  */}
     <div className='Profile_Container'>
+      <div className="nav">
+      <i class="fa fa-list" aria-hidden="true"></i>
+      </div>
       <div className="P-Left_main">
      
         <div className="PL_First_box">
