@@ -29,6 +29,9 @@
     background-color: var(--purple);
     color: white;
     z-index: 9999;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 50%;
 }
 .section4-main h1{
   text-align: center;

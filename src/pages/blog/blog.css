@@ -5,6 +5,9 @@
     padding-inline: 70px;
     row-gap: 25px;
     margin-top: 50px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 45%;
 }
 .blog-section1-left{
     width: 100%;
@@ -41,6 +44,9 @@
     margin-top: 40px;
     padding-inline: 140px;
     line-height: 25px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 50%;
 }
 .blog-section-3{
     width: 850px;
@@ -50,6 +56,9 @@
     position: relative;
     line-height: 32px;
     word-spacing: 2px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 50%;
     /* border: 1px solid grey; */
 }
 .blog-section-3 strong{
@@ -67,11 +76,17 @@
     position: absolute;
     top: -5px;
     left: -15px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 30%;
 }
 
 .blog-section-5{
     margin-top: 30px;
     padding-inline: 240px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 30%;
 }
 .blog-section-5 img{
     height: 360px;

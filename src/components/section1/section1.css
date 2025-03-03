@@ -3,6 +3,9 @@
     padding-block: 33px;
     padding-inline: 25px;
     position: relative;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 50%;
 }
 .s2left-con{
     width: 100%;

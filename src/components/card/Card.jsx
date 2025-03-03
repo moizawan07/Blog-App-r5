@@ -1,4 +1,7 @@
+import { useEffect } from "react";
 import "./card.css"
+
+
 
 function Card({imgSrc,role,date,title,desc}){
 
@@ -8,10 +11,9 @@ function Card({imgSrc,role,date,title,desc}){
  let yStored = cDate.slice(10)
  let finaldate = cDate.slice(8,10) +  mStored + yStored
 
- console.log(finaldate);
- 
 
   return(
+ 
     <div className="Card-main">
        <img src={imgSrc ? imgSrc : '/assets/card2.png'} alt="Card image"/>
 
@@ -28,6 +30,7 @@ function Card({imgSrc,role,date,title,desc}){
        
       <b>Read More...</b>
     </div>
+    
   )
 }
 

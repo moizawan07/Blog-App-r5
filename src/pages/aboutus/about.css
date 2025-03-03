@@ -1,6 +1,9 @@
 .About-us-Main{
     width: 100%;
     padding-inline: 90px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 30%;
 }
 
 .AU-section1 {
@@ -39,6 +42,9 @@
     justify-content: space-between;
     padding-right: 55px;
     align-items: center;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 50%;
 }
 .AU-section3 h1{
     margin-top: 25px;
@@ -58,6 +64,9 @@
     flex-wrap: wrap;
     margin-top: 65px;
     margin-bottom: 85px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 50%;
 }
 .AU-section4 .Au-card{
     width: 320px;

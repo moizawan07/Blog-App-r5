@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 50%;
 }
 
 .s3left-con{

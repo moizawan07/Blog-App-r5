@@ -2,6 +2,9 @@
  padding-top: 10px;
  padding-bottom: 29px;
  padding-left: 40px;
+ animation: scroll linear;
+ animation-timeline: view();
+ animation-range: 0 30%;
 }
 
 .first-footer-line{

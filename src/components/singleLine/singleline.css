@@ -3,6 +3,9 @@
     justify-content: space-between;
     padding-inline: 27px;
     padding-block: 60px;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 50%;
 }
 .singleline-main h1{
     font-weight: 650;

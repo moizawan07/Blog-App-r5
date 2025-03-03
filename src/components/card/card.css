@@ -4,6 +4,13 @@
     min-height: 550px;
     padding-block: 20px;
     padding-inline: 5px;
+    transition: 0.5s ease-in;
+    animation: scroll linear;
+    animation-timeline: view();
+    animation-range: 0 50%;
+    &:hover{
+        transform: scale(1.05);
+    }
 }
 .Card-main img{
     width: 100%;
