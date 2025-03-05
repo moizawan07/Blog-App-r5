@@ -1,10 +1,17 @@
+.main-con{
+  background-color: var(--purple);
+  display: flex;
+ justify-content: center;
+ padding-block: 20px;
+}
+
 .signup-container {
     /* background: #16213e; */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 300px rgba(6, 6, 6, 0.5);
     width: 550px;
-    margin:  20px auto;
+   background-color: white;
   }
   
   .signup-title {
@@ -25,6 +32,7 @@
     margin-bottom: 10px;
     border: none;
     border-radius: 5px;
+    background-color: whitesmoke;
   }
   
   .input-field:focus {
@@ -80,4 +88,25 @@
 .msg a{
     font-weight: bold;
     color: var(--purple);
+}
+
+@media (max-width:750px) {
+  .signup-container{
+    width: 95%;
+    padding-inline:11px;
+  }
+  .input-field {
+    padding: 5px;
+    font-size: 13px;
+    line-height: 18px !important;
+}
+.submit-button {
+  padding: 12px;
+}
+.google-button, .facebook-button {
+  padding-block: 12px;
+  padding-inline: 3px;
+  font-size: 13px;
+  border-radius: 7px;
+}
 }

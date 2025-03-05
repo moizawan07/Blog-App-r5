@@ -3,8 +3,8 @@ import { useNavigate } from "react-router-dom";
 import "./signUp.css";
 import { Link } from "react-router-dom";
 import { toast } from "react-toastify";
-import {auth,db} from '../../services/firebase'
-import { createUserWithEmailAndPassword } from "firebase/auth";
+import {auth, googleProvider, db} from '../../services/firebase'
+import { createUserWithEmailAndPassword, signInWithPopup } from "firebase/auth";
 import { setDoc,doc } from "firebase/firestore";
 
 // console.log(auth);
@@ -180,7 +180,9 @@ const setDataInFb = async () => {
 
 }
 
+
   return (
+   <div className="main-con">
     <div className="signup-container">
       <h2 className="signup-title">Sign Up</h2>
       <form className="signup-form"onSubmit={signUpDone}>
@@ -206,6 +208,7 @@ const setDataInFb = async () => {
         </div>
       </form>
     </div>
+  </div>
   );
 };
 

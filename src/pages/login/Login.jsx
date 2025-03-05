@@ -28,6 +28,7 @@ const Login = () => {
 
 
   return (
+    <div className="loginmain">
     <div className="login-container">
       <h2 className="login-title">Login</h2>
       <form className="login-form" onSubmit={loginInFB}>
@@ -39,6 +40,7 @@ const Login = () => {
       <p>Do not have an account? <Link to='/signup'>Sign Up</Link></p>
       </div>
     </div>
+  </div>
   );
 };
 
