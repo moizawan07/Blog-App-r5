@@ -5,18 +5,22 @@ import './profile.css'
 import { signOut } from 'firebase/auth';
 import {auth} from  '../../services/firebase'
 import { db } from '../../services/firebase';
-import { addDoc , collection , getDoc, doc } from 'firebase/firestore';
+import { addDoc , collection , getDoc, doc, serverTimestamp } from 'firebase/firestore';
 import { useNavigate } from 'react-router-dom';
 
 function Profile({userlogin}) {
-  let navigate = useNavigate(null)
- const [modal , setModal] = useState(false)                    // New Blog Modal
+
+ let navigate = useNavigate(null)
+ const [modal , setModal] = useState(false)
  const [userPostValue , setUserPostValue] = useState({         // User Values Store
     title : '',
     description : '',
     role : '',
-    imageSrc : ''
+    imageSrc : '',
   })
+
+  console.log('USERS POST VALUE', userPostValue);
+  
 
  if(userlogin){     // Descturing here 
     var {fullName, email , country, city , gender, phone} = userlogin; 
@@ -25,15 +29,26 @@ function Profile({userlogin}) {
  
  // Onchane Function Jo Input ki Value State Variable ma set Kr rha
 let name,value;
-const formValueSet =  (e) => {                   
-     name = e.target.name
-     value = e.target.value.toLocaleLowerCase()
-  setUserPostValue({...userPostValue, [name] : value})     // Set Input value In this state
+const formValueSet =  (e) => {              // New Blog Modal
+  let cDate = new Date();
+  let finalDate = cDate.toLocaleDateString('en-GB', { day: '2-digit', month: 'short', year: 'numeric' }).replace(',', ''); 
+
+  console.log(finalDate);
+  
+  
+  name = e.target.name
+  value = e.target.value.toLocaleLowerCase()
+  
+  setUserPostValue({...userPostValue, [name] : value, ["date"] : finalDate, ["createdAt"] : serverTimestamp()})     // Set Input value In this state
+
+  // Set User POST DATE AND MONTH AND ALSO SECONDS OF TIME FOR SORTING  
+  // setUserPostValue({...userPostValue,)
 }
 
 
 // This OnSubmit Function  Set USER POST in FIREBASE DATABASE & Print THIS POST
 const postSucessFullUpload = (event) =>{
+  
   event.preventDefault()
   let imgSrcRegex = /^https?:\/\/.*\.(?:png|jpg|jpeg|gif|bmp|webp|svg)(\?.*)?$/i;
 
@@ -51,13 +66,14 @@ const postSucessFullUpload = (event) =>{
           if(description.length >=20){                       // Check Descriptiom ki lenght 20 se Choti to  yahi  
             
            // Fourth Check Role
-           if(role.length >= 5){                            // Check Role ki lenght 5 se Choti to  yahi
+           if(role.length >= 5){
+                                         // Check Role ki lenght 5 se Choti to  yahi
                  setModal(false)      // Modal off
                  setUserPostValue({   // UserPostValue State Input EMPTY KR RHA
                        imageSrc : '',
                        title : '',
                        description : '',
-                       role : ''
+                       role : '',
                  })
                  toast.success("SucessFully Post", {       // POPUP
                   position: "top-right",
@@ -66,7 +82,7 @@ const postSucessFullUpload = (event) =>{
                   closeOnClick: true,
                   });
 
-               // IN This Function I Set the BLOG POST IN DATABASE
+              //  // IN This Function I Set the BLOG POST IN DATABASE
                  storedAndgetPostInFB()
 
 } 
@@ -125,6 +141,8 @@ const storedAndgetPostInFB =  async () => {
   // ADD THE BLOG POST IN  Firebase DataBase
   let postId ;
   try {                                     //DB name / Object jo store kra rha  
+    console.log('Try ka andr kiya mil rhi', userPostValue);
+    
     let setData = await addDoc(collection(db, 'UsersPost'),userPostValue)
     console.log('Succesfully upload' , setData.id);
     postId = setData.id

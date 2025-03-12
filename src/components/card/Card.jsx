@@ -5,11 +5,11 @@ import "./card.css"
 
 function Card({imgSrc,role,date,title,desc}){
 
- let cDate = new Date();           // date  Set For THre User Card Who Cant Put a date
- cDate = cDate.toDateString();
- let mStored = cDate.slice(3,7)
- let yStored = cDate.slice(10)
- let finaldate = cDate.slice(8,10) +  mStored + yStored
+//  let cDate = new Date();           // date  Set For THre User Card Who Cant Put a date
+//  cDate = cDate.toDateString();
+//  let mStored = cDate.slice(3,7)
+//  let yStored = cDate.slice(10)
+//  let finaldate = cDate.slice(8,10) +  mStored + yStored
 
 
   return(
@@ -19,7 +19,7 @@ function Card({imgSrc,role,date,title,desc}){
 
        <p className="firstP">
         <span className="Leftt">{role}</span>
-        <span className="Rightt">{date ? date : finaldate}</span>
+        <span className="Rightt">{date}</span>
        </p>
 
        <h1>{title}</h1>
